@@ -96,7 +96,7 @@ Note: The following has been tested to work on Ubuntu 20.04 PC
     ```
 - Step 5: Clone the following repository and go into Seeed_Grove_Vision_AI_Module_V2 folder
     ```
-    git clone 'https://OliverFaust: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@github.com/OliverFaust/Three-Gate-Validation-Framework.git' 
+    git clone 'https://https://github.com/OliverFaust/Three-Gate-Validation-Framework.git' 
     cd Three-Gate-Validation-Framework
     ```
 - Step 6: Compile the firmware
