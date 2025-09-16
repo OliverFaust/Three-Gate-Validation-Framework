@@ -12,7 +12,7 @@ The primary contribution of this fork is the **`af_detect_testbench`**, a compre
 
 | scenario_app | project name & description |
 | :----------- | :------------------------- |
-| **af detect testbench** | [**af_detect_testbench**](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/af_detect_testbench/README.md) <br> **This is the main contribution of this fork.** It provides a complete, self-contained example of the Three-Gate Framework in action. The application includes the tooling and workflows for Model-Gated validation (floating-point model performance), Hardware-Gated validation (TFLM conversion and quantization), and System-Gated validation (on-target MCU testing). |
+| **af detect testbench** | [**af_detect_testbench**](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/af_detect_testbench/README.md) <br> **This is the main contribution of this fork.** It provides a complete, self-contained example of the Three-Gate Framework in action. The application includes the tooling and workflows for Model-Gated validation (floating-point model performance), Hardware-Gated validation (TFLM conversion and quantization), and System-Gated validation (on-target MCU testing). |
 
 This testbench serves as a blueprint for researchers and engineers to structure their own AI@Edge projects, ensuring robustness and efficiency at every stage of the development lifecycle.
 
@@ -22,46 +22,46 @@ This is a repository which step by step teaches you how to build your own exampl
 Finally, teach you how to restore to the original factory settings and run [SenseCraft AI](https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/#-no-code-getting-started-with-sensecraft-ai-) from [Seeed Studio](https://wiki.seeedstudio.com/grove_vision_ai_v2/).
 ## Outline
 - How to build the firmware?
-    - [Build the firmware at Linux environment](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#build-the-firmware-at-linux-environment)
-    - [Build the firmware at MacOS environment](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#build-the-firmware-at-macos-environment)
-    - [Build the firmware at Windows environment](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#build-the-firmware-at-windows-environment)
+    - [Build the firmware at Linux environment](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#build-the-firmware-at-linux-environment)
+    - [Build the firmware at MacOS environment](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#build-the-firmware-at-macos-environment)
+    - [Build the firmware at Windows environment](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#build-the-firmware-at-windows-environment)
 - How to flash the firmware?
-    - [System Requirement](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#system-requirement)
-    - [Flash Image Update at Linux Environment by python code](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#flash-image-update-at-linux-environment-by-python-code)
-    - [Flash Image Update at Linux Environment](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#flash-image-update-at-linux-environment)
-    - [Flash using Edge Impulse CLI tools](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#flash-using-edge-impulse-cli-tools)
+    - [System Requirement](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#system-requirement)
+    - [Flash Image Update at Linux Environment by python code](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#flash-image-update-at-linux-environment-by-python-code)
+    - [Flash Image Update at Linux Environment](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#flash-image-update-at-linux-environment)
+    - [Flash using Edge Impulse CLI tools](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#flash-using-edge-impulse-cli-tools)
 - How to restore to the original factory settings?
-    - [Linux Environment](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#linux-environment)
+    - [Linux Environment](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#linux-environment)
 
 | scenario_app  | project name |
 | ----- | -------- |
-| af detect testbench | [af_detect_testbench](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/af_detect_testbench/README.md) |
-| face mesh | [tflm_fd_fm](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_fd_fm/README.md) |
-| yolov8n object detection | [tflm_yolov8_od](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_od/README.md) |
-| yolov8n pose | [tflm_yolov8_pose](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_pose/README.md) |
-| yolov8n gender classification | [tflm_yolov8_gender_cls](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_gender_cls/README.md) |
-| pdm mic record | [pdm_record](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/pdm_record/README.md)      |
-| KeyWord Spotting using Transformers | [kws_pdm_record](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/kws_pdm_record/README.md) |
-| imu read | [imu_read](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/imu_read/README.md) |
-| peoplenet from TAO | [tflm_peoplenet](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_peoplenet/README.md) |
-| yolo11n object detection | [tflm_yolo11_od](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od/README.md) |
+| af detect testbench | [af_detect_testbench](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/af_detect_testbench/README.md) |
+| face mesh | [tflm_fd_fm](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_fd_fm/README.md) |
+| yolov8n object detection | [tflm_yolov8_od](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_od/README.md) |
+| yolov8n pose | [tflm_yolov8_pose](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_pose/README.md) |
+| yolov8n gender classification | [tflm_yolov8_gender_cls](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolov8_gender_cls/README.md) |
+| pdm mic record | [pdm_record](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/pdm_record/README.md)      |
+| KeyWord Spotting using Transformers | [kws_pdm_record](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/kws_pdm_record/README.md) |
+| imu read | [imu_read](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/imu_read/README.md) |
+| peoplenet from TAO | [tflm_peoplenet](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_peoplenet/README.md) |
+| yolo11n object detection | [tflm_yolo11_od](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/tflm_yolo11_od/README.md) |
 
-- [How to add support for raspberry pi camera?](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#how-to-add-support-for-raspberry-pi-camera)
-- [How to use CMSIS-NN at the project?](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#how-to-use-cmsis-nn-at-the-project)
+- [How to add support for raspberry pi camera?](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#how-to-add-support-for-raspberry-pi-camera)
+- [How to use CMSIS-NN at the project?](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#how-to-use-cmsis-nn-at-the-project)
 
-- [How to use CMSIS-DSP at the project?](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/hello_world_cmsis_dsp/README.md)
+- [How to use CMSIS-DSP at the project?](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/hello_world_cmsis_dsp/README.md)
 
-- [How to use CMSIS-CV at the project?](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/hello_world_cmsis_cv/README.md)
+- [How to use CMSIS-CV at the project?](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/hello_world_cmsis_cv/README.md)
     - please clone the project by following command to download CMSIS-CV library
         ```
-        git clone --recursive https://github.com/OliverFaust/AF_Detect_Seed_Grove.git
+        git clone --recursive https://github.com/OliverFaust/Three-Gate-Validation-Framework.git
         ```
 - How to run Edge Impulse Example: standalone inferencing using Grove Vision AI Module V2 (Himax WiseEye2)? 
-    - [ei_standalone_inferencing](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/ei_standalone_inferencing)
+    - [ei_standalone_inferencing](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/ei_standalone_inferencing)
 
-    - [ei_standalone_inferencing_camera](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/ei_standalone_inferencing_camera)
+    - [ei_standalone_inferencing_camera](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/ei_standalone_inferencing_camera)
 
-- [FAQ](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/FAQ.md)
+- [FAQ](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/FAQ.md)
 
 ## How to build the firmware?
 This part explains how you can build the firmware for Grove Vision AI Module V2.
@@ -96,8 +96,8 @@ Note: The following has been tested to work on Ubuntu 20.04 PC
     ```
 - Step 5: Clone the following repository and go into Seeed_Grove_Vision_AI_Module_V2 folder
     ```
-    git clone 'https://OliverFaust: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@github.com/OliverFaust/AF_Detect_Seed_Grove.git' 
-    cd AF_Detect_Seed_Grove
+    git clone 'https://OliverFaust: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@github.com/OliverFaust/Three-Gate-Validation-Framework.git' 
+    cd Three-Gate-Validation-Framework
     ```
 - Step 6: Compile the firmware
     ```
@@ -136,7 +136,7 @@ Note: The following has been tested to work on Ubuntu 20.04 PC
 - Output firmware image: `./output_case1_sec_wlcsp/output.img`
     ![alt text](images/output_image.png)
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 ## How to flash the firmware?
 This part explains how you can flash the firmware to Grove Vision AI Module V2.
 ### System Requirement
@@ -191,12 +191,12 @@ This part explains how you can flash the firmware to Grove Vision AI Module V2.
                 ![alt text](images/flash_update_0_serial_port.png)
                 ![alt text](images/flash_update_0_serial_port_2.PNG)
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 
 
 ### Flash Image Update at Linux Environment by python code
 - Prerequisites for xmodem
-    - Please install the package at [xmodem/requirements.txt](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/xmodem/requirements.txt) 
+    - Please install the package at [xmodem/requirements.txt](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/xmodem/requirements.txt) 
         ```
         pip install -r xmodem/requirements.txt
         ```
@@ -225,10 +225,10 @@ sudo setfacl -m u:[USERNAME]:rw /dev/ttyUSB0
     ![alt text](images/grove_vision_ai_v2_all.jpg)
 - It will success to run the algorithm.
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 ### Flash Image Update at Linux Environment
 Following steps update application in the flash.
-- Step 1: Open `Minicom`, setup serial port and COM Port name-> connect to Grove Vision AI Module V2. (Please reference the minicom part of [System Requirement](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#system-requirement))
+- Step 1: Open `Minicom`, setup serial port and COM Port name-> connect to Grove Vision AI Module V2. (Please reference the minicom part of [System Requirement](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#system-requirement))
     ![alt text](images/minicom_5_connect.png)
 - Step 2: Hold down any key on the keyboard (except the Enter key) and press the reset button to reset Grove Vision AI Module V2 and the startup options will be displayed.
     ![alt text](images/minicom_6.png)
@@ -245,7 +245,7 @@ Following steps update application in the flash.
 - Step 8: You will see the uart on `minicom` which is runing your algorithm.
     ![alt text](images/minicom_12.png)
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 ### Flash using Edge Impulse CLI tools
 This method works on all supported operating systems (Windows/Linux/MacOS...)
 
@@ -291,11 +291,11 @@ Note: if the flashing process hangs, just cancel it (Ctrl+C) and start once agai
     ![alt text](images/SenseCraft_1.png)
     ![alt text](images/SenseCraft_0.png)
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 
 ## How to add support for raspberry pi camera?
-You can reference the scenario app [allon_sensor_tflm](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm) , [allon_sensor_tflm_freertos](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm_freertos) and [tflm_fd_fm](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_fd_fm).
-Take allon_sensor_tflm for example, you should only modify the [allon_sensor_tflm.mk](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm/allon_sensor_tflm.mk#L37) from cis_ov5647 to cis_imx219 or cis_imx477.
+You can reference the scenario app [allon_sensor_tflm](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm) , [allon_sensor_tflm_freertos](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm_freertos) and [tflm_fd_fm](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/tflm_fd_fm).
+Take allon_sensor_tflm for example, you should only modify the [allon_sensor_tflm.mk](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm/allon_sensor_tflm.mk#L37) from cis_ov5647 to cis_imx219 or cis_imx477.
 ```
 #CIS_SUPPORT_INAPP_MODEL = cis_ov5647
 CIS_SUPPORT_INAPP_MODEL = cis_imx219
@@ -303,18 +303,18 @@ CIS_SUPPORT_INAPP_MODEL = cis_imx219
 ```
 So that, it can support cis_imx219 or cis_imx477 camera.
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
 
 ## How to use CMSIS-NN at the project?
--  Modify the setting at the [makefile](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/makefile)
+-  Modify the setting at the [makefile](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/makefile)
     - Enable the flag `LIB_CMSIS_NN_ENALBE` to build CMSIS-NN library 
         ```
         LIB_CMSIS_NN_ENALBE = 1
         ``` 
-    - You can reference the scenario app example about [allon_sensor_tflm_cmsis_nn](https://github.com/OliverFaust/AF_Detect_Seed_Grove/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm_cmsis_nn) which is the example running the model without passing vela and using the CMSIS-NN library.
-        - Change the `APP_TYPE` to `allon_sensor_tflm_cmsis_nn` at the [makefile](https://github.com/OliverFaust/AF_Detect_Seed_Grove/blob/main/EPII_CM55M_APP_S/makefile)
+    - You can reference the scenario app example about [allon_sensor_tflm_cmsis_nn](https://github.com/OliverFaust/Three-Gate-Validation-Framework/tree/main/EPII_CM55M_APP_S/app/scenario_app/allon_sensor_tflm_cmsis_nn) which is the example running the model without passing vela and using the CMSIS-NN library.
+        - Change the `APP_TYPE` to `allon_sensor_tflm_cmsis_nn` at the [makefile](https://github.com/OliverFaust/Three-Gate-Validation-Framework/blob/main/EPII_CM55M_APP_S/makefile)
             ```
             APP_TYPE = allon_sensor_tflm_cmsis_nn
             ```
 
-[Back to Outline](https://github.com/OliverFaust/AF_Detect_Seed_Grove?tab=readme-ov-file#outline)
+[Back to Outline](https://github.com/OliverFaust/Three-Gate-Validation-Framework?tab=readme-ov-file#outline)
