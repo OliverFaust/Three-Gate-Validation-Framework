@@ -16,7 +16,7 @@ extern "C" {
 
 int init_model(bool security_enable, bool privilege_enable);
 
-int run_af_model(test_sample_t* sample, int8_t *model_output, uint32_t output_length);
+int run_model(test_sample_t* sample, int8_t *model_output, uint32_t output_length);
 
 int cv_deinit();
 #ifdef __cplusplus
@@ -24,3 +24,4 @@ int cv_deinit();
 #endif
 
 #endif /* APP_SCENARIO_ALLON_SENSOR_TFLM_CVAPP_ */
+
