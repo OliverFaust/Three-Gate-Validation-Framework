@@ -130,7 +130,7 @@ int app_main(void) {
     hx_lib_spi_eeprom_enable_XIP(USE_DW_SPI_MST_Q, true, FLASH_QUAD, true);
 #endif
 
-    if(init_init(true, true)<0) {
+    if(init_model(true, true)<0) {
     	xprintf("cv init fail\n");
     	return -1;
     }
@@ -178,3 +178,4 @@ while(1) {
 xprintf("Test sequence completed. Last processed sample: %lu\n", loaded_index);
 	return 0;
 }
+
