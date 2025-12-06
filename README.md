@@ -84,7 +84,7 @@ Note: The following has been tested to work on Ubuntu 20.04 PC
     tar -xf arm-gnu-toolchain-13.2.rel1-aarch64-arm-none-eabi.tar.xz
     
     # Move to /opt (optional)
-    sudo mv arm-gnu-toolchain-13.2.rel1-aarch64-arm-none-eabi /opt/
+    sudo mv arm-gnu-toolchain-13.2.Rel1-aarch64-arm-none-eabi /opt/
     ```
 - Step 4: Add arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi/bin/: to PATH. Not needed if compiling with Orangepi (ARM64).
     ```
